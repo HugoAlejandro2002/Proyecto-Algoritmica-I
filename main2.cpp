@@ -199,7 +199,7 @@ void reglas(){
         cout << "---------------------------Buscaminas------------------------- \n";
         cout << "----------------------------Reglas---------------------------- \n";
         cout << "Algunas celdas contienen bombas. Aquellas que no, contienen el \n";
-        cout << "número de bombas que se encuentran en las celdas a su alrededor.\n";
+        cout << "numero de bombas que se encuentran en las celdas a su alrededor.\n";
         cout << "Si revela una bomba, pierde. Si revela todas las celdas sin\n";
         cout << "bombas, gana.\n";
         cout << "Las bombas pueden ser marcadas y las celdas pueden ser reveladas\n";
