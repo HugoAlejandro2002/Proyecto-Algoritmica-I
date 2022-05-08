@@ -196,8 +196,8 @@ void juego(int i){
 }
 
 void reglas(){
-        cout << "___________________________Buscaminas__________________________ \n";
-        cout << "_____________________________Reglas____________________________ \n";
+        cout << "---------------------------Buscaminas------------------------- \n";
+        cout << "----------------------------Reglas---------------------------- \n";
         cout << "Algunas celdas contienen bombas. Aquellas que no, contienen el \n";
         cout << "número de bombas que se encuentran en las celdas a su alrededor.\n";
         cout << "Si revela una bomba, pierde. Si revela todas las celdas sin\n";
