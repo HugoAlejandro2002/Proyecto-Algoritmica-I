@@ -196,8 +196,8 @@ void juego(int i){
 }
 
 void reglas(){
-        cout << "--------------------------Buscaminas-------------------------- \n";
-        cout << "-----------------------------Reglas----------------------------- \n";
+        cout << "___________________________Buscaminas__________________________ \n";
+        cout << "_____________________________Reglas____________________________ \n";
         cout << "Algunas celdas contienen bombas. Aquellas que no, contienen el \n";
         cout << "número de bombas que se encuentran en las celdas a su alrededor.\n";
         cout << "Si revela una bomba, pierde. Si revela todas las celdas sin\n";
@@ -209,7 +209,7 @@ void reglas(){
         cout << "presionar, donde 0 sera 'revelar', 1 'marcar' y 2 'desmarcar. \n"; 
         cout << "M y N son las coordenadas del cuadro con el que se interactuara.\n";
         cout << "M representa la fila seleccionada y N la columna seleccionada. \n";
-        cout << "--------------------------Buscaminas-------------------------- \n";
+        cout << "___________________________Buscaminas___________________________ \n";
         cout << "Ingresar cualquier número \n";
         int x;
         cin>>x;
@@ -217,8 +217,8 @@ void reglas(){
 }
 
 void menu(){
-    cout << "--------------------------Buscaminas-------------------------- \n";
-    cout << "-----------------------Menu Principal----------------------- \n";
+    cout << "__________________________Buscaminas__________________________ \n";
+    cout << "________________________Menú Principal________________________ \n";
     cout << "1. Ejemplo 1 \n";
     cout << "2. Ejemplo 2 \n";
     cout << "3. Ejemplo 3 \n";
@@ -227,7 +227,7 @@ void menu(){
     cout << "6. Ejemplo 6 \n";
     cout << "7. Reglas \n";
     cout << "0. Salir \n";
-    cout << "--------------------------Buscaminas--------------------------\n";
+    cout << "___________________________Buscaminas___________________________ \n";
     cout << "Ingresar opcion: ";
     int i=8;
     while(i>7){
