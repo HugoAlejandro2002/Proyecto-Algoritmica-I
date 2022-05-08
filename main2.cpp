@@ -210,7 +210,7 @@ void reglas(){
         cout << "M y N son las coordenadas del cuadro con el que se interactuara.\n";
         cout << "M representa la fila seleccionada y N la columna seleccionada. \n";
         cout << "---------------------------Buscaminas------------------------- \n";
-        cout << "Ingresar cualquier número \n";
+        cout << "Ingresar cualquier numero \n";
         int x;
         cin>>x;
         menu();
