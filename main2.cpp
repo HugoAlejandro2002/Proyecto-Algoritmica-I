@@ -203,7 +203,7 @@ void reglas(){
         cout << "Si revela una bomba, pierde. Si revela todas las celdas sin\n";
         cout << "bombas, gana.\n";
         cout << "Las bombas pueden ser marcadas y las celdas pueden ser reveladas\n";
-        cout << "en grupo si se han marcado el número de bombas a su alrededor o si\n";
+        cout << "en grupo si se han marcado el numero de bombas a su alrededor o si\n";
         cout << "no tiene bombas alrededor.\n";
         cout << "Para jugar, debe ingresar 3 digitos: P, M y N. P sera el boton a\n";
         cout << "presionar, donde 0 sera 'revelar', 1 'marcar' y 2 'desmarcar. \n"; 
