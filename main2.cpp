@@ -150,24 +150,6 @@ void showmatrixfinal(){
     }
 }
 
-/* void buildMatrix(int i){
-    string archivo;
-    archivo = "ejemplo"+ std::to_string(i)+".txt";
-    lector.open(archivo);
-
-    if(!lector){
-        cout << "No existe el archivo";
-        exit(2);
-    } else {
-        lector >> fila >> columna;
-        loadLevel(i);
-        showmatrixplayer();
-        verificar(0,0);
-        showmatrixplayer();
-    }
-
-} */
-
 //MENU 
 
 void juego(int i){
@@ -230,6 +212,11 @@ void menu(){
     cout << "6. Ejemplo 6 \n";
     cout << "7. Reglas \n";
     cout << "8. Salir \n";
+    cout << "----------------------------Comandos---------------------------- \n";
+    cout << "P M N \n";
+    cout << "P= 0 liberar, 1 marcar, 1 (sobre '+') desmarcar\n";
+    cout << "M= fila\n";
+    cout << "N= columna\n";
     cout << "--------------------------Buscaminas-------------------------- \n";
     cout << "Ingresar opcion: ";
     int i=8;
