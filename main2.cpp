@@ -120,6 +120,7 @@ void loadLevel(int i){
             }
         }
 
+        memset(visitado,0,sizeof(visitado));
         memset(marcados, 0, sizeof(marcados));
         memset(marcado, 0, sizeof(marcado));
     }
