@@ -143,11 +143,11 @@ void showmatrixplayer(){
 void showmatrixfinal(){
     for(int i=0; i<fila;i++){
         for(int j=0;j<columna;j++){
-            cout<<grafomain[i][j]<<" ";
+            if(grafomain[i][j]==-1){
+                grafoshow[i][j]="x";
+            }
         }
-        cout<<endl;
     }
-    cout<<endl;
 }
 
 /* void buildMatrix(int i){
@@ -192,6 +192,7 @@ void juego(int i){
             showmatrixplayer();
             cout<< "GANASTE \n";
         } else {
+            showmatrixfinal();
             showmatrixplayer();
             cout<< "PERDISTE \n";
         }
