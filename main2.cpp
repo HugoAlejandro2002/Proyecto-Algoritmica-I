@@ -52,23 +52,24 @@ void floodfill(int x,int y) {
 }
 
 void marcar(int x, int y){
-    marcado[x][y] = true;
-    grafoshow[x][y]="+";
-    for(int i=0;i<8;i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
-            marcados[nx][ny]++;
+    if(!marcado[x][y]){
+        marcado[x][y] = true;
+        grafoshow[x][y]="+";
+        for(int i=0;i<8;i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+                marcados[nx][ny]++;
+        }
+    } else {
+        marcado[x][y] =false;
+        grafoshow[x][y]="*";
+        for(int i=0;i<8;i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+                marcados[nx][ny]--;
+        }
     }
-}
-
-void desmarcar(int x, int y){
-    marcado[x][y] =false;
-    grafoshow[x][y]="*";
-    for(int i=0;i<8;i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
-            marcados[nx][ny]--;
-    }
+    
 }
 
 void verificar(){
@@ -172,8 +173,8 @@ void juego(int i){
         while(play){
             showmatrixplayer();
             int p, m, n;
-            p=3;
-            while(p>2){
+            p=2;
+            while(p>1){
                 cin>> p >> m>> n;
             }
             cout<< "\n";
@@ -181,8 +182,6 @@ void juego(int i){
                 floodfill(m,n);
             } else if(p==1){
                 marcar(m,n);
-            } else if(p==2){
-                desmarcar(m,n);
             }
             verificar();
         }
@@ -206,7 +205,7 @@ void reglas(){
         cout << "en grupo si se han marcado el numero de bombas a su alrededor o si\n";
         cout << "no tiene bombas alrededor.\n";
         cout << "Para jugar, debe ingresar 3 digitos: P, M y N. P sera el boton a\n";
-        cout << "presionar, donde 0 sera 'revelar', 1 'marcar' y 2 'desmarcar. \n"; 
+        cout << "presionar, donde 0 sera 'revelar', y 1 'marcar' y 'desmarcar. \n"; 
         cout << "M y N son las coordenadas del cuadro con el que se interactuara.\n";
         cout << "M representa la fila seleccionada y N la columna seleccionada. \n";
         cout << "---------------------------Buscaminas------------------------- \n";
