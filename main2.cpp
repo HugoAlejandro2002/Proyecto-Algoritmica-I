@@ -85,7 +85,7 @@ void verificar(){
 
 void loadLevel(int i){
     string archivo;
-    archivo = "ejemplo"+ std::to_string(i)+".txt";
+    archivo = "ejemplo"+ to_string(i)+".txt";
     lector.open(archivo);
 
     if(!lector){
