@@ -52,6 +52,7 @@ void floodfill(int x,int y) {
 }
 
 void marcar(int x, int y){
+    if(!visitado[x][y]){
     if(!marcado[x][y]){
         marcado[x][y] = true;
         grafoshow[x][y]="+";
@@ -68,6 +69,7 @@ void marcar(int x, int y){
                 int ny = y + dy[i];
                 marcados[nx][ny]--;
         }
+    }
     }
     
 }
