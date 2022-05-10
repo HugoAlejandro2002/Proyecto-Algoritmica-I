@@ -181,21 +181,21 @@ void juego(int i){
 }
 
 void reglas(){
-        cout << "---------------------------Buscaminas------------------------- \n";
-        cout << "----------------------------Reglas---------------------------- \n";
-        cout << "Algunas celdas contienen bombas. Aquellas que no, contienen el \n";
-        cout << "numero de bombas que se encuentran en las celdas a su alrededor.\n";
-        cout << "Si revela una bomba, pierde. Si revela todas las celdas sin\n";
-        cout << "bombas, gana.\n";
-        cout << "Las bombas pueden ser marcadas y las celdas pueden ser reveladas\n";
-        cout << "en grupo si se han marcado el numero de bombas a su alrededor o si\n";
-        cout << "no tiene bombas alrededor.\n";
-        cout << "Para jugar, debe ingresar 3 digitos: P, M y N. P sera el boton a\n";
-        cout << "presionar, donde 0 sera 'revelar', y 1 'marcar' y 'desmarcar. \n"; 
-        cout << "M y N son las coordenadas del cuadro con el que se interactuara.\n";
-        cout << "M representa la fila seleccionada y N la columna seleccionada. \n";
-        cout << "---------------------------Buscaminas------------------------- \n";
-        cout << "Ingresar cualquier numero \n";
+        cout << "\033[1;36m---------------------------Buscaminas-------------------------\033[0m\n";
+        cout << "\033[1;34m----------------------------Reglas----------------------------\033[0m\n";
+        cout << "\033[1;37mAlgunas celdas contienen bombas. Aquellas que no, contienen el\033[0m\n";
+        cout << "\033[1;37mnumero de bombas que se encuentran en las celdas a su alrededor.\033[0m\n";
+        cout << "\033[1;37mSi revela una bomba, pierde. Si revela todas las celdas sin\033[0m\n";
+        cout << "\033[1;37mbombas, gana.\033[0m\n";
+        cout << "\033[1;37mLas bombas pueden ser marcadas y las celdas pueden ser reveladas\033[0m\n";
+        cout << "\033[1;37men grupo si se han marcado el numero de bombas a su alrededor o si\033[0m\n";
+        cout << "\033[1;37mno tiene bombas alrededor.\033[0m\n";
+        cout << "\033[1;37mPara jugar, debe ingresar 3 digitos: P, M y N. P sera el boton a\033[0m\n";
+        cout << "\033[1;37mpresionar, donde 0 sera 'revelar', y 1 'marcar' y 'desmarcar.\033[0m\n"; 
+        cout << "\033[1;37mM y N son las coordenadas del cuadro con el que se interactuara.\033[0m\n";
+        cout << "\033[1;37mM representa la fila seleccionada y N la columna seleccionada.\033[0m\n";
+        cout << "\033[1;36m---------------------------Buscaminas-------------------------\033[0m\n";
+        cout << "\033[1;37mIngresar cualquier numero\033[0m\n";
         int x;
         cin>>x;
         menu();
