@@ -27,7 +27,7 @@ void menu();
 
 void floodfill(int x,int y) {
     if (grafomain[x][y]==-1 && !marcado[x][y]){
-        grafoshow[x][y]= "x";
+        grafoshow[x][y]= "\033[1;31mx\033[0m";
         play=false;
         win=false;
     } else if(grafomain[x][y]!=-1) {
@@ -55,7 +55,7 @@ void marcar(int x, int y){
     if(!visitado[x][y]){
     if(!marcado[x][y]){
         marcado[x][y] = true;
-        grafoshow[x][y]="+";
+        grafoshow[x][y]="\033[1;31m+\033[0m";
         for(int i=0;i<8;i++) {
                 int nx = x + dx[i];
                 int ny = y + dy[i];
@@ -144,7 +144,7 @@ void showmatrixfinal(){
     for(int i=0; i<fila;i++){
         for(int j=0;j<columna;j++){
             if(grafomain[i][j]==-1){
-                grafoshow[i][j]="x";
+                grafoshow[i][j]="\033[1;31mx\033[0m";
             }
         }
     }
@@ -172,11 +172,11 @@ void juego(int i){
         }
         if(win){
             showmatrixplayer();
-            cout<< "GANASTE \n";
+            cout<< "\033[1;32mGANASTE\033[0m\n";
         } else {
             showmatrixfinal();
             showmatrixplayer();
-            cout<< "PERDISTE \n";
+            cout<< "\033[1;31mPERDISTE\033[0m\n";
         }
 }
 
