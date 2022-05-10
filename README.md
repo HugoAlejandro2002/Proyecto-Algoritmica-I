@@ -15,7 +15,7 @@ El proyecto final elegido es un juego de Buscaminas. Este juego utiliza el méto
 <ol>
   
   <li>Se liberen las celdas de alrededor que no estén marcadas.</li>
-  <li>Se liberen también las vecinas de una celda $0$ que esté alrededor de la celda que se seleccionó. Esto se llevará a cabo de manera recursiva.</li>
+  <li>Se liberen también las vecinas de una celda 0 que esté alrededor de la celda que se seleccionó. Esto se llevará a cabo de manera recursiva.</li>
   
 </ol>
 
