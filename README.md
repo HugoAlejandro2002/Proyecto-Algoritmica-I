@@ -8,4 +8,4 @@
 ##### Definición del Proyecto
 ##### Controles
 ##### Reglas
-##### Intalación
+##### Instalación
