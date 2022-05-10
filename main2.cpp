@@ -202,23 +202,23 @@ void reglas(){
 }
 
 void menu(){
-    cout << "---------------------------Buscaminas------------------------- \n";
-    cout << "------------------------Menu Principal------------------------ \n";
-    cout << "1. Ejemplo 1 \n";
-    cout << "2. Ejemplo 2 \n";
-    cout << "3. Ejemplo 3 \n";
-    cout << "4. Ejemplo 4 \n";
-    cout << "5. Ejemplo 5 \n";
-    cout << "6. Ejemplo 6 \n";
-    cout << "7. Reglas \n";
-    cout << "8. Salir \n";
-    cout << "----------------------------Comandos---------------------------- \n";
-    cout << "P M N \n";
-    cout << "P= 0 liberar, 1 marcar, 1 (sobre '+') desmarcar\n";
-    cout << "M= fila\n";
-    cout << "N= columna\n";
-    cout << "--------------------------Buscaminas-------------------------- \n";
-    cout << "Ingresar opcion: ";
+    cout << "\033[1;36m---------------------------Buscaminas-------------------------\033[0m\n";
+    cout << "\033[1;34m------------------------Menu Principal------------------------\033[0m\n";
+    cout << "\033[1;37m1. Ejemplo 1\033[0m\n";
+    cout << "\033[1;37m2. Ejemplo 2\033[0m\n";
+    cout << "\033[1;37m3. Ejemplo 3\033[0m\n";
+    cout << "\033[1;37m4. Ejemplo 4\033[0m\n";
+    cout << "\033[1;37m5. Ejemplo 5\033[0m\n";
+    cout << "\033[1;37m6. Ejemplo 6\033[0m\n";
+    cout << "\033[1;37m7. Reglas\033[0m\n";
+    cout << "\033[1;37m8. Salir\033[0m\n";
+    cout << "\033[1;35m----------------------------Comandos----------------------------\033[0m\n";
+    cout << "\033[1;37mP M N\033[0m\n";
+    cout << "\033[1;37mP= 0 liberar, 1 marcar, 1 (sobre '+') desmarcar\033[0m\n";
+    cout << "\033[1;37mM= fila\033[0m\n";
+    cout << "\033[1;37mN= columna\033[0m\n";
+    cout << "\033[1;36m---------------------------Buscaminas-------------------------\033[0m\n";
+    cout << "\033[1;37mIngresar opcion: \033[0m";
     int i=8;
     while(i>7){
         cin>>i;
