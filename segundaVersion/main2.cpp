@@ -164,7 +164,7 @@ void juego(int i){
             p=2;
             m=n=-1;
             while((p>1 || p<0)||(n>columna || n<0)||(m>fila || m<0)){// && n<columna && n>=0 && m<fila && m>=0){
-                cout<<"0/1=marcar/demarcar  m=fila  n=columna"<<endl;
+                cout<<"0=liberar,1=marcar/desmarcar  m=fila  n=columna"<<endl;
                 cin>> p >> m>> n;
                 if(p>1 || p<0 || n>columna || n<0 || m>fila || m<0){
                     cout<<"Lo que insertas no es valido"<<endl;
