@@ -32,6 +32,7 @@ void floodfill(int x,int y) {
         win=false;
     } else if(grafomain[x][y]!=-1) {
         if(!visitado[x][y]){
+            
             grafoshow[x][y] =to_string(grafomain[x][y]);
             visitado[x][y]=true;
             contadorLiberados++;
@@ -134,6 +135,8 @@ void showmatrixplayer(){
     for(int i=0; i<fila;i++){
         for(int j=0;j<columna;j++){
             cout<<grafoshow[i][j]<<" ";
+            
+            //cout << "\033[1;36 1\033[0m\n";
         }
         cout<<endl;
     }
@@ -159,8 +162,14 @@ void juego(int i){
             showmatrixplayer();
             int p, m, n;
             p=2;
-            while(p>1){
+            m=n=-1;
+            while((p>1 || p<0)||(n>columna || n<0)||(m>fila || m<0)){// && n<columna && n>=0 && m<fila && m>=0){
+                cout<<"0/1=marcar/demarcar  m=fila  n=columna"<<endl;
                 cin>> p >> m>> n;
+                if(p>1 || p<0 || n>columna || n<0 || m>fila || m<0){
+                    cout<<"Lo que insertas no es valido"<<endl;
+                }
+
             }
             cout<< "\n";
             if(p==0){
