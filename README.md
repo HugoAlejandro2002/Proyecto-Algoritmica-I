@@ -30,3 +30,57 @@ Para jugar, debe ingresar 3 dígitos separados por espacios: P, M y N. P será e
 Algunas celdas contienen bombas. Aquellas que no, contienen el número de bombas que se encuentran en las celdas a su alrededor. Si revela una bomba, pierde. Si revela todas las celdas sin bombas, gana. Las bombas pueden ser marcadas y las celdas pueden ser reveladas en grupo si se han marcado el número de bombas a su alrededor o si no tiene bombas alrededor.
 
 ### Instalación
+
+<div align="center">
+  
+  Primero, ingresar al siguiente [link](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/tree/main/versionFinal). Tras hacer click en el link, se encontrará en un directorio del repositorio de GitHub creado por el grupo. Haga click en el archivo 'buscaminas.zip'.
+
+![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install1.png)
+  
+  A continuación hacer click en el botón 'Download'.
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install2.png)
+  
+  Una vez descargado el archivo, ir a la carpeta en que está guardado y hacer click derecho sobre él.
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install3.png)
+  
+  Entonces, hacer click en la opción 'Extract here' o 'Extraer aquí'.
+  
+   ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install4.png)
+  
+  Una vez extraído el archivo, mover la carpeta generada al directorio que se utilice como workspace de Visual Studio Code.
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install5.png)
+  
+  Para acceder al juego tendrá que seguir las siguientes instrucciones cada vez que lo haga:
+
+Abrir Visual Studio y escribir en la terminal: cd buscaminas
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install6.png)
+  
+  Por último, escribir en la terminal: .\buscaminas
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install7.png)
+  
+  Si usted siguió de manera correcta las instrucciones, abrá accedido de manera correcta al juego.
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install8.png)
+  
+  ### Archivo .exe no funciona
+  
+  Primero, abrir 'buscaminas.cpp'.
+  
+   ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install9.png)
+  
+  Entonces, ir a 'Terminal' y hacer click en 'Run Build Task'.
+  
+   ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install10.png)
+  
+  Por último, hacer click en la opción marcada en la siguiente imagen:
+  
+  ![alt text](https://github.com/HugoAlejandro2002/Proyecto-Algoritmica-I/blob/main/imagenes/install11.png)
+  
+  De esta manera se abrá sobreescrito el archivo .exe y el programa ya debería funcionar.
+  
+</div>
