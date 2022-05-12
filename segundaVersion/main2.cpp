@@ -220,7 +220,7 @@ void menu(){
     cout << "\033[1;37m5. Ejemplo 5\033[0m\n";
     cout << "\033[1;37m6. Ejemplo 6\033[0m\n";
     cout << "\033[1;37m7. Reglas\033[0m\n";
-    cout << "\033[1;37m8. Salir\033[0m\n";
+    cout << "\033[1;37m0. Salir\033[0m\n";
     cout << "\033[1;35m----------------------------Comandos----------------------------\033[0m\n";
     cout << "\033[1;37mP M N\033[0m\n";
     cout << "\033[1;37mP= 0 liberar, 1 marcar, 1 (sobre '+') desmarcar\033[0m\n";
@@ -229,8 +229,9 @@ void menu(){
     cout << "\033[1;36m---------------------------Buscaminas-------------------------\033[0m\n";
     cout << "\033[1;37mIngresar opcion: \033[0m";
     int i=8;
-    while(i>7){
+    while(i>7||i<0){
         cin>>i;
+        cout<<"No es valida esa opcion!!"<<endl;
     }
     if(i==0){
         exit;
